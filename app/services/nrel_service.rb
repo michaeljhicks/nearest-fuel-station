@@ -1,4 +1,5 @@
 class NrelService
+
   def self.conn
     Faraday.new(url: 'https://developer.nrel.gov') do |faraday|
       faraday.params['api_key'] = ENV['nrel_api_key']
@@ -8,7 +9,7 @@ class NrelService
   end
 
   def self.nearest_station(address)
-    response = conn.get("/api/alt-fuel-stations/v1/nearest.json?locations=#{address}")
+    response = conn.get("/api/alt-fuel-stations/v1/nearest.json?location=#{address}")
     json = JSON.parse(response.body, symbolize_names: true)
   end
 end
