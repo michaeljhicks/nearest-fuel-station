@@ -1,6 +1,6 @@
 require 'rails_helper'
 
- RSpec.describe MapquestFacade do
+ RSpec.describe MapquestFacade, :vcr do
    describe 'class methods' do
      describe '#route(start_address, end_address)' do
        before(:each) do
@@ -10,7 +10,7 @@ require 'rails_helper'
        end
 
        it 'creates a Route object' do
-         expect(page).to be_a(Route)
+         expect(@route).to be_a(Route)
        end
      end
    end

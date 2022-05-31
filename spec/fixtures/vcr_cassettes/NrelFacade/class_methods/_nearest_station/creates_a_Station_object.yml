@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 31 May 2022 13:58:32 GMT
+      - Tue, 31 May 2022 14:07:20 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -33,11 +33,11 @@ http_interactions:
       Access-Control-Max-Age:
       - '86400'
       Age:
-      - '0'
+      - '2'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Last-Modified:
-      - Tue, 31 May 2022 13:58:32 GMT
+      - Tue, 31 May 2022 14:07:19 GMT
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Strict-Transport-Security:
@@ -59,13 +59,13 @@ http_interactions:
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Remaining:
-      - '997'
+      - '994'
       X-Request-Id:
-      - bf409f47113e2ab7643cfb6179a8a919
+      - abb929a2f33277ab5e31729423cc483f
       X-Runtime:
-      - '0.012402'
+      - '0.069463'
       X-Vcap-Request-Id:
-      - 64cd7ea9-a17b-48d9-7502-1b76840cc4e2
+      - aceb9b6f-df30-4c2a-5e9c-003c5550b458
       X-Xss-Protection:
       - 1; mode=block
       X-Frame-Options:
@@ -79,5 +79,5 @@ http_interactions:
         17th Street, Suite 130","zip":"80202","country":"US","bd_blends":null,"cng_dispenser_num":null,"cng_fill_type_code":null,"cng_psi":null,"cng_renewable_source":null,"cng_total_compression":null,"cng_total_storage":null,"cng_vehicle_class":null,"e85_blender_pump":null,"e85_other_ethanol_blends":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"SemaCharge
         Network","ev_network_web":"https://semaconnect.com/","ev_other_evse":null,"ev_pricing":"$2.00-$4.00/Hr
         Variable Parking Fee","ev_renewable_source":null,"hy_is_retail":null,"hy_pressures":null,"hy_standards":null,"hy_status_link":null,"lng_renewable_source":null,"lng_vehicle_class":null,"lpg_primary":null,"lpg_nozzle_types":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"access_days_time_fr":null,"intersection_directions_fr":null,"bd_blends_fr":null,"groups_with_access_code_fr":"Public","ev_pricing_fr":null,"ev_network_ids":{"station":["5965"],"posts":["2642","2643"]},"distance":0.0888,"distance_km":0.14291}]}'
-  recorded_at: Tue, 31 May 2022 13:58:32 GMT
+  recorded_at: Tue, 31 May 2022 14:07:19 GMT
 recorded_with: VCR 6.1.0
