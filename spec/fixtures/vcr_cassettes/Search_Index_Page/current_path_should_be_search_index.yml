@@ -1,0 +1,130 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=CMqG0jxYKd81yfsGtDIIZmWTFLmuXIdw0B2jGBtC&limit=1&location=1331%2017th%20St,%20Denver,%20CO%2080202
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 31 May 2022 14:18:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Last-Modified:
+      - Tue, 31 May 2022 14:18:10 GMT
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      - max-age=31536000; preload
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding,Origin
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '993'
+      X-Request-Id:
+      - 16f508110085576fd983a00a19b416dd
+      X-Runtime:
+      - '0.022456'
+      X-Vcap-Request-Id:
+      - 3f2e9176-3fbb-4d9a-655e-9bd03dd72e6b
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"latitude":39.750614,"longitude":-104.996775,"location_country":"US","precision":{"value":9,"name":"premise","types":["premise"]},"station_locator_url":"https://afdc.energy.gov/stations/","total_results":224,"station_counts":{"total":506,"fuels":{"BD":{"total":0},"E85":{"total":2},"ELEC":{"total":498,"stations":{"total":216}},"HY":{"total":0},"LNG":{"total":0},"CNG":{"total":1},"LPG":{"total":5}}},"offset":0,"fuel_stations":[{"access_code":"public","access_days_time":"MO:
+        Not Specified; TU: Not Specified; WE: Not Specified; TH: Not Specified; FR:
+        Not Specified; SA: Not Specified; SU: Not Specified","access_detail_code":null,"cards_accepted":null,"date_last_confirmed":"2022-05-31","expected_date":null,"fuel_type_code":"ELEC","groups_with_access_code":"Public","id":212679,"open_date":"2022-03-25","owner_type_code":null,"status_code":"E","station_name":"CBRE
+        As Agent for EQC Operating Trust","station_phone":"800-663-5633","updated_at":"2022-05-31T00:32:33Z","facility_type":null,"geocode_status":"GPS","latitude":39.7502666,"longitude":-104.9951694,"city":"Denver","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1225
+        17th Street, Suite 130","zip":"80202","country":"US","bd_blends":null,"cng_dispenser_num":null,"cng_fill_type_code":null,"cng_psi":null,"cng_renewable_source":null,"cng_total_compression":null,"cng_total_storage":null,"cng_vehicle_class":null,"e85_blender_pump":null,"e85_other_ethanol_blends":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"SemaCharge
+        Network","ev_network_web":"https://semaconnect.com/","ev_other_evse":null,"ev_pricing":"$2.00-$4.00/Hr
+        Variable Parking Fee","ev_renewable_source":null,"hy_is_retail":null,"hy_pressures":null,"hy_standards":null,"hy_status_link":null,"lng_renewable_source":null,"lng_vehicle_class":null,"lpg_primary":null,"lpg_nozzle_types":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"access_days_time_fr":null,"intersection_directions_fr":null,"bd_blends_fr":null,"groups_with_access_code_fr":"Public","ev_pricing_fr":null,"ev_network_ids":{"station":["5965"],"posts":["2642","2643"]},"distance":0.0888,"distance_km":0.14291}]}'
+  recorded_at: Tue, 31 May 2022 14:18:10 GMT
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/directions/v2/route?from=1331%2017th%20St,%20Denver,%20CO%2080202&key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&to=1225%2017th%20Street,%20Suite%20130%20Denver,%20CO%2080202
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Tue, 31 May 2022 14:18:11 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '3913'
+      Set-Cookie:
+      - JSESSIONID=062902F89CFD9A25A77B4A4E3E70404C; Path=/directions; HttpOnly
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Tue, 31 May 2022 14:18:11 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJoYXNUb2xsUm9hZCI6ZmFsc2UsImhhc0JyaWRnZSI6ZmFsc2UsImJvdW5kaW5nQm94Ijp7ImxyIjp7ImxuZyI6LTEwNC45OTU3MTIsImxhdCI6MzkuNzQ5NzcxfSwidWwiOnsibG5nIjotMTA0Ljk5Njc3MywibGF0IjozOS43NTA2MX19LCJkaXN0YW5jZSI6MC4wODEsImhhc1RpbWVkUmVzdHJpY3Rpb24iOmZhbHNlLCJoYXNUdW5uZWwiOmZhbHNlLCJoYXNIaWdod2F5IjpmYWxzZSwiY29tcHV0ZWRXYXlwb2ludHMiOltdLCJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6LTQwMCwibWVzc2FnZSI6IiJ9LCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDA6MTgiLCJzZXNzaW9uSWQiOiI2Mjk2MjNhMi0wM2RhLTVmMjEtMDJiNC0zNTUxLTAyNzFmYjVlMWEyNyIsImhhc0FjY2Vzc1Jlc3RyaWN0aW9uIjpmYWxzZSwicmVhbFRpbWUiOjIzLCJoYXNTZWFzb25hbENsb3N1cmUiOmZhbHNlLCJoYXNDb3VudHJ5Q3Jvc3MiOmZhbHNlLCJmdWVsVXNlZCI6MC4wMSwibGVncyI6W3siaGFzVG9sbFJvYWQiOmZhbHNlLCJoYXNCcmlkZ2UiOmZhbHNlLCJkZXN0TmFycmF0aXZlIjoiIiwiZGlzdGFuY2UiOjAuMDgxLCJoYXNUaW1lZFJlc3RyaWN0aW9uIjpmYWxzZSwiaGFzVHVubmVsIjpmYWxzZSwiaGFzSGlnaHdheSI6ZmFsc2UsImluZGV4IjowLCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDA6MTgiLCJvcmlnSW5kZXgiOi0xLCJoYXNBY2Nlc3NSZXN0cmljdGlvbiI6ZmFsc2UsImhhc1NlYXNvbmFsQ2xvc3VyZSI6ZmFsc2UsImhhc0NvdW50cnlDcm9zcyI6ZmFsc2UsInJvYWRHcmFkZVN0cmF0ZWd5IjpbW11dLCJkZXN0SW5kZXgiOi0xLCJ0aW1lIjoxOCwiaGFzVW5wYXZlZCI6ZmFsc2UsIm9yaWdOYXJyYXRpdmUiOiIiLCJtYW5ldXZlcnMiOlt7ImRpc3RhbmNlIjowLjA4MSwic3RyZWV0cyI6WyIxN3RoIFN0Il0sIm5hcnJhdGl2ZSI6IlN0YXJ0IG91dCBnb2luZyBzb3V0aGVhc3Qgb24gMTd0aCBTdCB0b3dhcmQgTGFyaW1lciBTdC9DTy0zMy4iLCJ0dXJuVHlwZSI6Niwic3RhcnRQb2ludCI6eyJsbmciOi0xMDQuOTk2NzczLCJsYXQiOjM5Ljc1MDYxfSwiaW5kZXgiOjAsImZvcm1hdHRlZFRpbWUiOiIwMDowMDoxOCIsImRpcmVjdGlvbk5hbWUiOiJTb3V0aGVhc3QiLCJtYW5ldXZlck5vdGVzIjpbXSwibGlua0lkcyI6W10sInNpZ25zIjpbXSwibWFwVXJsIjoiaHR0cDovL3d3dy5tYXBxdWVzdGFwaS5jb20vc3RhdGljbWFwL3Y1L21hcD9rZXk9T0VBQUxoOWJ0T3lEcDVVeXJSWTVMazZxZHNKTVphWHEmc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOS43NTA2MTAzNTE1NjI1LC0xMDQuOTk2NzcyNzY2MTEzMjh8bWFya2VyLTF8fDM5Ljc0OTc3MTExODE2NDA2LC0xMDQuOTk1NzEyMjgwMjczNDR8bWFya2VyLTJ8fCZjZW50ZXI9MzkuNzUwMTkwNzM0ODYzMjgsLTEwNC45OTYyNDI1MjMxOTMzNiZkZWZhdWx0TWFya2VyPW5vbmUmem9vbT0xNCZyYW5kPS0yNDk0MjY1OTkmc2Vzc2lvbj02Mjk2MjNhMi0wM2RhLTVmMjEtMDJiNC0zNTUxLTAyNzFmYjVlMWEyNyIsInRyYW5zcG9ydE1vZGUiOiJBVVRPIiwiYXR0cmlidXRlcyI6MCwidGltZSI6MTgsImljb25VcmwiOiJodHRwOi8vY29udGVudC5tcWNkbi5jb20vbXFzaXRlL3R1cm5zaWducy9pY29uLWRpcnMtc3RhcnRfc20uZ2lmIiwiZGlyZWN0aW9uIjo1fSx7ImRpc3RhbmNlIjowLCJzdHJlZXRzIjpbXSwibmFycmF0aXZlIjoiMTIyNSAxN1RIIFNULCBTVUlURSAxMzAgaXMgb24gdGhlIHJpZ2h0LiIsInR1cm5UeXBlIjotMSwic3RhcnRQb2ludCI6eyJsbmciOi0xMDQuOTk1NzEyLCJsYXQiOjM5Ljc0OTc3MX0sImluZGV4IjoxLCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDA6MDAiLCJkaXJlY3Rpb25OYW1lIjoiIiwibWFuZXV2ZXJOb3RlcyI6W10sImxpbmtJZHMiOltdLCJzaWducyI6W10sInRyYW5zcG9ydE1vZGUiOiJBVVRPIiwiYXR0cmlidXRlcyI6MCwidGltZSI6MCwiaWNvblVybCI6Imh0dHA6Ly9jb250ZW50Lm1xY2RuLmNvbS9tcXNpdGUvdHVybnNpZ25zL2ljb24tZGlycy1lbmRfc20uZ2lmIiwiZGlyZWN0aW9uIjowfV0sImhhc0ZlcnJ5IjpmYWxzZX1dLCJvcHRpb25zIjp7ImFydGVyeVdlaWdodHMiOltdLCJjeWNsaW5nUm9hZEZhY3RvciI6MSwidGltZVR5cGUiOjAsInVzZVRyYWZmaWMiOmZhbHNlLCJyZXR1cm5MaW5rRGlyZWN0aW9ucyI6ZmFsc2UsImNvdW50cnlCb3VuZGFyeURpc3BsYXkiOnRydWUsImVuaGFuY2VkTmFycmF0aXZlIjpmYWxzZSwibG9jYWxlIjoiZW5fVVMiLCJ0cnlBdm9pZExpbmtJZHMiOltdLCJkcml2aW5nU3R5bGUiOjIsImRvUmV2ZXJzZUdlb2NvZGUiOnRydWUsImdlbmVyYWxpemUiOi0xLCJtdXN0QXZvaWRMaW5rSWRzIjpbXSwic2lkZU9mU3RyZWV0RGlzcGxheSI6dHJ1ZSwicm91dGVUeXBlIjoiRkFTVEVTVCIsImF2b2lkVGltZWRDb25kaXRpb25zIjpmYWxzZSwicm91dGVOdW1iZXIiOjAsInNoYXBlRm9ybWF0IjoicmF3IiwibWF4V2Fsa2luZ0Rpc3RhbmNlIjotMSwiZGVzdGluYXRpb25NYW5ldXZlckRpc3BsYXkiOnRydWUsInRyYW5zZmVyUGVuYWx0eSI6LTEsIm5hcnJhdGl2ZVR5cGUiOiJ0ZXh0Iiwid2Fsa2luZ1NwZWVkIjotMSwidXJiYW5Bdm9pZEZhY3RvciI6LTEsInN0YXRlQm91bmRhcnlEaXNwbGF5Ijp0cnVlLCJ1bml0IjoiTSIsImhpZ2h3YXlFZmZpY2llbmN5IjoyMiwibWF4TGlua0lkIjowLCJtYW5ldXZlclBlbmFsdHkiOi0xLCJhdm9pZFRyaXBJZHMiOltdLCJmaWx0ZXJab25lRmFjdG9yIjotMSwibWFubWFwcyI6InRydWUifSwibG9jYXRpb25zIjpbeyJkcmFnUG9pbnQiOmZhbHNlLCJkaXNwbGF5TGF0TG5nIjp7ImxuZyI6LTEwNC45OTY3NzMsImxhdCI6MzkuNzUwNjE0fSwiYWRtaW5BcmVhNCI6IkRlbnZlciIsImFkbWluQXJlYTUiOiJEZW52ZXIiLCJwb3N0YWxDb2RlIjoiODAyMDItMTUwNyIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTMiOiJDTyIsInR5cGUiOiJzIiwic2lkZU9mU3RyZWV0IjoiUiIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IlAxQUFBIiwiYWRtaW5BcmVhNFR5cGUiOiJDb3VudHkiLCJsaW5rSWQiOjEyNDcxMzI2LCJzdHJlZXQiOiIxMzMxIDE3dGggU3QiLCJhZG1pbkFyZWE1VHlwZSI6IkNpdHkiLCJnZW9jb2RlUXVhbGl0eSI6IlBPSU5UIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImxhdExuZyI6eyJsbmciOi0xMDQuOTk2Nzc1LCJsYXQiOjM5Ljc1MDYxNH19LHsiZHJhZ1BvaW50IjpmYWxzZSwiZGlzcGxheUxhdExuZyI6eyJsbmciOi0xMDQuOTk1NzEyLCJsYXQiOjM5Ljc0OTc3MX0sImFkbWluQXJlYTQiOiJEZW52ZXIiLCJhZG1pbkFyZWE1IjoiRGVudmVyIiwicG9zdGFsQ29kZSI6IjgwMjAyLTE1MDEiLCJhZG1pbkFyZWExIjoiVVMiLCJhZG1pbkFyZWEzIjoiQ08iLCJ0eXBlIjoicyIsInNpZGVPZlN0cmVldCI6IkwiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJQMUFBQSIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwibGlua0lkIjo2OTgwNTE3NSwic3RyZWV0IjoiMTIyNSAxN3RoIFN0LCBTVUlURSAxMzAiLCJhZG1pbkFyZWE1VHlwZSI6IkNpdHkiLCJnZW9jb2RlUXVhbGl0eSI6IlBPSU5UIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImxhdExuZyI6eyJsbmciOi0xMDQuOTk1NzEyLCJsYXQiOjM5Ljc0OTc3Mn19XSwidGltZSI6MTgsImhhc1VucGF2ZWQiOmZhbHNlLCJsb2NhdGlvblNlcXVlbmNlIjpbMCwxXSwiaGFzRmVycnkiOmZhbHNlfSwiaW5mbyI6eyJzdGF0dXNjb2RlIjowLCJjb3B5cmlnaHQiOnsiaW1hZ2VBbHRUZXh0IjoiwqkgMjAyMiBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJ0ZXh0IjoiwqkgMjAyMiBNYXBRdWVzdCwgSW5jLiJ9LCJtZXNzYWdlcyI6W119fQ==
+  recorded_at: Tue, 31 May 2022 14:18:10 GMT
+recorded_with: VCR 6.1.0
