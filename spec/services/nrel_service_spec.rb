@@ -1,6 +1,6 @@
 require 'rails_helper'
 
- RSpec.describe NrelService, type: :service do
+ RSpec.describe 'NrelService', :vcr do
    describe 'class methods' do
      describe '#nearest_station' do
        before(:each) do
